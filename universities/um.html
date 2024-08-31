@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blog Details || Nuron - NFT Marketplace Template</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-style-mode" content="0"> <!-- 0 == light, 1 == dark -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="../assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/vendor/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/vendor/swiper-bundle.css">
+    <link rel="stylesheet" href="../assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="../assets/css/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" href="../assets/css/vendor/odometer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .university-stats .fas {
+            font-size: 2rem;
+            color: #e67e22; /* Custom color for icons */
+        }
+
+        .university-stats h6 {
+            font-size: 1.5rem;
+            color: #333; /* Text color */
+        }
+
+        .university-stats p {
+            font-size: 1rem;
+            margin-top: -5px;
+            color: #555; /* Text color */
+        }
+
+        .university-stats a {
+            color: #e67e22;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .university-stats a:hover {
+            color: #d35400; /* Darker shade on hover */
+        }
+
+        .tabs-section .nav-tabs {
+            border-bottom: 2px solid #ddd;
+            justify-content: center; /* Center the tabs */
+            padding-bottom: 15px; /* Added space for a more breathable layout */
+            margin-bottom: 25px; /* Increase spacing below the tabs */
+        }
+
+        .tabs-section .nav-link {
+            color: #333;
+            font-weight: bold;
+            margin-right: 1rem;
+            padding: 10px 15px; /* Added padding for a better click area */
+            border: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease; /* Smooth transition for hover and active states */
+            font-size: 1.1rem; /* Slightly larger font size for better readability */
+            border-radius: 5px 5px 0 0; /* Rounded corners on the top */
+        }
+
+        .tabs-section .nav-link:hover {
+            color: #e67e22;
+            background-color: rgba(230, 126, 34, 0.1); /* Subtle background color on hover */
+        }
+
+        .tabs-section .nav-link.active {
+            color: #e67e22;
+            border-color: #e67e22;
+            background-color: #fff; /* White background for active tab */
+            border-top: 2px solid #e67e22; /* Top border to highlight active tab */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        }
+
+        .tabs-section .tab-pane {
+            background-color: #f9f9f9;
+            padding: 30px; /* Increased padding for content breathing space */
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+            animation: fadeIn 0.5s ease-in-out; /* Smooth fade-in effect for tabs */
+        }
+
+        .tabs-section h5 {
+            font-size: 1.5rem; /* Larger font size for headers */
+            margin-bottom: 20px; /* Increased spacing below header */
+            color: #333;
+            font-weight: bold; /* Bolder text for emphasis */
+            border-bottom: 2px solid #ddd; /* Underline header for clarity */
+            padding-bottom: 10px; /* Added padding to create space between text and underline */
+        }
+
+        .tabs-section p {
+            font-size: 1.1rem; /* Slightly larger font size for better readability */
+            color: #555;
+            line-height: 1.7; /* Increased line height for improved readability */
+            margin-bottom: 15px; /* Added margin for better spacing between paragraphs */
+        }
+
+        /* Animation for tab content */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .tabs-section .nav-tabs {
+                flex-direction: column; /* Stack tabs on top of each other */
+            }
+
+            .tabs-section .nav-link {
+                margin-bottom: 10px; /* Added spacing between stacked tabs */
+                text-align: center; /* Center align text */
+            }
+        }
+    </style>
+</head>
+
+<body class="template-color-1 ">
+  <div id="preloader" class="show">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            // Ensure the preloader stays for at least 2 seconds
+            setTimeout(function() {
+                var preloader = document.getElementById('preloader');
+                preloader.classList.remove('show');
+                preloader.classList.add('hide'); // Add the 'hide' class to fade out
+            }, 1000); // 2000 milliseconds = 2 seconds
+        });
+    </script>
+
+    <!-- start header area -->
+    <!-- Start Header -->
+    <header class="rn-header haeder-default header--sticky">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-left">
+                    <div class="logo-thumbnail logo-custom-css">
+                        <a class="logo-light" href="../index.html"><img src="../assets/images/logo/logo-white.png"
+                                alt="nft-logo"></a>
+                        <a class="logo-dark" href="../index.html"><img src="../assets/images/logo/logo-dark.png"
+                                alt="nft-logo"></a>
+                    </div>
+                    <div class="mainmenu-wrapper">
+                        <nav id="sideNav" class="mainmenu-nav d-none d-xl-block">
+                            <!-- Start Mainmanu Nav -->
+                            <ul class="mainmenu">
+                                <li><a href="../index.html">الرئيسية</a></li>
+
+                                <li><a href="../about.html">من نحن</a>
+                                </li>
+                                <li class="has-droupdown has-menu-child-item">
+                                    <a href="#">خدماتنا</a>
+                                    <ul class="submenu">
+                                        <li><a href="../airport.html">الإستقبال من المطار<i class="feather-fast-forward"></i></a></li>
+                                        <li><a href="../airport.html">الإستقبال من المطار<i
+                                                    class="feather-fast-forward"></i></a></li>
+                                        <li><a href="../airport.html">الإستقبال من المطار<i
+                                                    class="feather-fast-forward"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li class="down">
+                                    <a href="../universities.html">الجامعات</a>
+                                </li>
+                                <li>
+                                    <a class="down" href="../blog.html">أخبار الإتحاد</a>
+                                </li>
+                                <li>
+                                    <a class="down" href="../library.html">مكتبة الإتحاد</a>
+                                </li>
+                                <li><a class="down" href="../contact.html">تواصل معنا</a></li>
+                            </ul>
+                            <!-- End Mainmanu Nav -->
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="setting-option header-btn rbt-site-header" id="rbt-site-header">
+                        <div class="icon-box">
+                            <a id="connectbtn" class="btn btn-primary-alta btn-small" href="../register.html">التسجيل
+                                بالعضوية</a>
+                        </div>
+                    </div>
+                    <div class="setting-option mobile-menu-bar d-block d-xl-none">
+                        <div class="hamberger">
+                            <button class="hamberger-button">
+                                <i class="feather-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="my_switcher" class="my_switcher setting-option">
+                        <ul>
+                            <li>
+                                <a href="javascript: void(0);" data-theme="light" class="setColor light">
+                                    <img class="sun-image" src="../assets/images/icons/sun-01.svg" alt="Sun images">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
+                                    <img class="Victor Image" src="../assets/images/icons/vector.svg" alt="Vector Images">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="rn-breadcrumb-inner ptb--30">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h5 class="title text-center text-md-end">جامعة ولاية مالانج</h5>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul class="breadcrumb-list">
+                        <li class="item"><a href="index.html">الرئيسية</a></li>
+                        <li class="separator"><i class="feather-chevron-right"></i></li>
+                        <li class="item current">الجامعات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- end page title area -->
+       <!-- University Statistics Section -->
+       <section class="university-stats py-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <span class="d-block text-muted"><i class="fas fa-globe"></i></span>
+                    <h6 class="font-weight-bold mb-1">46</h6>
+                    <p class="text-muted">التصنيف المحلي</p>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <span class="d-block text-muted"><i class="fas fa-globe-americas"></i></span>
+                    <h6 class="font-weight-bold mb-1">2131</h6>
+                    <p class="text-muted">التصنيف العالمي</p>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <span class="d-block text-muted"><i class="fas fa-user-graduate"></i></span>
+                    <h6 class="font-weight-bold mb-1">12000</h6>
+                    <p class="text-muted">عدد الطلاب</p>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <span class="d-block text-muted"><i class="fas fa-chart-bar"></i></span>
+                    <h6 class="font-weight-bold mb-1">43</h6>
+                    <p class="text-muted">عدد التخصصات</p>
+                </div>
+                <div class="col-md-2 col-sm-4 mb-3">
+                    <span class="d-block text-muted"><i class="fas fa-link"></i></span>
+                    <h6 class="font-weight-bold mb-1"><a href="#">الموقع الرسمي للجامعة</a></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="tabs-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Tabs Navigation -->
+                    <ul class="nav nav-tabs d-flex justify-content-around" id="universityTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="introduction-tab" data-bs-toggle="tab" data-bs-target="#introduction" type="button" role="tab" aria-controls="introduction" aria-selected="true">
+                                التعريف بالجامعة
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="majors-fees-tab" data-bs-toggle="tab" data-bs-target="#majors-fees" type="button" role="tab" aria-controls="majors-fees" aria-selected="false">
+                                التخصصات والرسوم
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="campus-tab" data-bs-toggle="tab" data-bs-target="#campus" type="button" role="tab" aria-controls="campus" aria-selected="false">
+                                الحرم الجامعي
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="housing-tab" data-bs-toggle="tab" data-bs-target="#housing" type="button" role="tab" aria-controls="housing" aria-selected="false">
+                                السكن الطلابي
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- Tabs Content -->
+                    <div class="tab-content pt-4" id="universityTabsContent">
+                        <!-- Introduction Tab -->
+                        <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
+                            <h5>لماذا جامعة سابانجي التركية</h5>
+                            <p>تعمل جامعة سابانجي التركية من خلال رؤيتها الاستشرافية، لتصبح في مقدمة الجامعات التركية، والعالمية.</p>
+                            <p>تلتزم الجامعة بالقيم العالمية والاحتياجات المجتمعية، وتعزيز الثقة في طلابها وخريجيها، وتحقيق التنمية المستدامة، وتوفير أدوات التطوير المستمر.</p>
+                            <!-- Additional content can be added here for more information -->
+                        </div>
+                        <!-- Majors and Fees Tab -->
+                        <div class="tab-pane fade" id="majors-fees" role="tabpanel" aria-labelledby="majors-fees-tab">
+                            <h5>التخصصات والرسوم</h5>
+                            <p>تفاصيل عن التخصصات المتاحة في الجامعة، بالإضافة إلى الرسوم الدراسية.</p>
+                            <!-- Additional content can be added here for more information -->
+                        </div>
+                        <!-- Campus Tab -->
+                        <div class="tab-pane fade" id="campus" role="tabpanel" aria-labelledby="campus-tab">
+                            <h5>الحرم الجامعي</h5>
+                            <p>معلومات حول الحرم الجامعي والمرافق المتاحة للطلاب.</p>
+                            <!-- Additional content can be added here for more information -->
+                        </div>
+                        <!-- Housing Tab -->
+                        <div class="tab-pane fade" id="housing" role="tabpanel" aria-labelledby="housing-tab">
+                            <h5>السكن الطلابي</h5>
+                            <p>معلومات حول خيارات السكن المتاحة للطلاب داخل الحرم الجامعي.</p>
+                            <!-- Additional content can be added here for more information -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+
+     <!-- Start Footer Area -->
+     <div class="rn-footer-one rn-section-gap bg-color--1 mt--100 mt_md--80 mt_sm--80">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="widget-content-wrapper">
+                        <div class="footer-left">
+                            <div class="logo-thumbnail logo-custom-css">
+                                <a class="logo-light" href="../index.html"><img src="../assets/images/logo/logo-white.png"
+                                        alt="nft-logo"></a>
+                                <a class="logo-dark" href="../index.html"><img src="../assets/images/logo/logo-dark.png"
+                                        alt="nft-logo"></a>
+                            </div>
+                            <p class="rn-footer-describe">
+                                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                                أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+                                أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس أيوتي
+                                أريري دولار </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--40">
+                    <div class="footer-widget widget-quicklink">
+                        <h6 class="widget-title">روابط مهمة</h6>
+                        <ul class="footer-list-one">
+                            <li class="single-list"><a href="#">من نحن</a></li>
+                            <li class="single-list"><a href="#">أخبار الإتحاد</a></li>
+                            <li class="single-list"><a href="#">الجامعات</a></li>
+                            <li class="single-list"><a href="#">خدماتنا</a></li>
+                            <li class="single-list"><a href="#">تواصل معنا</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
+                    <div class="footer-widget widget-information">
+                        <h6 class="widget-title">اتصل بنا</h6>
+                        <ul class="footer-list-one">
+                            <li class="single-list"><a href="#">Call us</a></li>
+                            <li class="single-list"><a href="#">Email</a></li>
+                            <li class="single-list"><a href="#">other</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+
+    <!-- Start Footer Area -->
+    <div class="copy-right-one ptb--20 bg-color--1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="copyright-left">
+                        <span>All rights reserved YSUI © 2024</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="copyright-right">
+                        <ul class="social-copyright">
+                            <li><a href="https://www.facebook.com/YSU.INDO/" target="_blank"><i
+                                        data-feather="facebook"></i></a></li>
+                            <li><a href="https://www.youtube.com/@yemenistudentsunion-indone6209" target="_blank"><i
+                                        data-feather="youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/ysu.indo/" target="_blank"><i
+                                        data-feather="instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i data-feather="linkedin"></i></a></li>
+                            <li><a href="mailto:ysu.indo@gmail.com" target="_blank"><i data-feather="mail"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Area -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!-- Start Top To Bottom Area  -->
+    <div class="rn-progress-parent">
+        <svg class="rn-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- End Top To Bottom Area  -->
+    <!-- JS ============================================ -->
+    <script src="../assets/js/vendor/jquery.js"></script>
+    <script src="../assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/vendor/jquery-ui.js"></script>
+    <script src="../assets/js/vendor/modernizer.min.js"></script>
+    <script src="../assets/js/vendor/feather.min.js"></script>
+    <script src="../assets/js/vendor/slick.min.js"></script>
+    <script src="../assets/js/vendor/swiper-bundle.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/vendor/sal.min.js"></script>
+    <script src="../assets/js/vendor/particles.js"></script>
+    <script src="../assets/js/vendor/js.cookie.js"></script>
+    <script src="../assets/js/vendor/jquery.style.swicher.js"></script>
+    <script src="../assets/js/vendor/count-down.js"></script>
+    <script src="../assets/js/vendor/isotop.js"></script>
+    <script src="../assets/js/vendor/imageloaded.js"></script>
+    <script src="../assets/js/vendor/backtoTop.js"></script>
+    <script src="../assets/js/vendor/odometer.js"></script>
+    <script src="../assets/js/vendor/jquery-appear.js"></script>
+    <script src="../assets/js/vendor/scrolltrigger.js"></script>
+    <script src="../assets/js/vendor/jquery.custom-file-input.js"></script>
+    <script src="../assets/js/vendor/savePopup.js"></script>
+    <script src="../assets/js/vendor/vanilla.tilt.js"></script>
+
+    <!-- main JS -->
+    <script src="../assets/js/main.js"></script>
+    <!-- Meta Mask  -->
+    <script src="../assets/js/vendor/web3.min.js"></script>
+    <script src="../assets/js/vendor/maralis.js"></script>
+    <script src="../assets/js/vendor/nft.js"></script>
+</body>
+
+</html>

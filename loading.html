@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page with Loading Animation</title>
+
+    <style>
+        /* Loading screen styles */
+        #loading-screen {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .spinner {
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 5px solid #3498db;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Hide the loading screen after the content is loaded */
+        .loaded #loading-screen {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* Page content styling */
+        .slider-one {
+            padding-top: 50px;
+        }
+
+        .slider-thumbnail img {
+            animation: float 3s ease-in-out infinite;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .button-group a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loading screen -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Page content -->
+    <div class="slider-one rn-section-gapTop">
+        <div class="container">
+            <div class="row row-reverce-sm align-items-center">
+                <div class="col-lg-5 col-md-6 col-sm-12 mt_sm--50">
+                    <h2 class="title">الإتحاد العام للطلاب اليمنيين في إندونيسيا</h2>
+                    <p class="slide-disc">ا“لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت...</p>
+                    <div class="button-group">
+                        <a class="btn btn-large btn-primary" href="#">البدء</a>
+                        <a class="btn btn-large btn-primary-alta" href="create.html">خلق</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 offset-lg-1 offset-lg-rtl-1">
+                    <div class="slider-thumbnail">
+                        <img src="assets/images/slider/slider-1.png" alt="Slider Images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inline JavaScript -->
+    <script>
+        window.addEventListener("load", function() {
+            // Remove the loading screen once the content is fully loaded
+            document.body.classList.add("loaded");
+        });
+    </script>
+</body>
+</html>
